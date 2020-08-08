@@ -1,0 +1,3 @@
+[submodule "es"]
+	url = https://github.com/carpentries-i18n/r-intro-geospatial-es
+	path = _locale/es
