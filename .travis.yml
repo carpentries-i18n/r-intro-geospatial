@@ -32,6 +32,7 @@ env:
 # Stages -----------------------------------------------------------------------
 
 before_install:
+  - bash modify_submodules.sh
   - if [ "${TRAVIS_OS_NAME}" == "osx" ]; then brew install ccache; fi
   - if [ "${TRAVIS_OS_NAME}" == "osx" ]; then export PATH="/usr/local/opt/ccache/libexec:$PATH"; fi
   - rvm install 2.5.8
